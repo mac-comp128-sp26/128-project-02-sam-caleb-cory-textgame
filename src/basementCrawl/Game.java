@@ -4,19 +4,29 @@ import java.util.Scanner;
 
 public class Game {
     Player player;
+    Scanner sc;
 
     public Game() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("What's your name?: ");
+        sc = new Scanner(System.in);
 
-        String name = sc.nextLine();
-        player = new Player(name);
+        initPlayer();
 
         sc.close();
     }
 
     public static void main(String[] args) {
         new Game();
+    }
+
+    private void initPlayer() {
+        System.out.println("What's your name?: ");
+
+        String name = sc.nextLine();
+        player = new Player(name);
+    }
+
+    private int getValidInput() {
+        return 0;
     }
     
 }

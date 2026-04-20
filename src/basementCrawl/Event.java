@@ -1,6 +1,7 @@
 package basementCrawl;
 
 public class Event {
+    String title;
     String blurb;
     String[] options;
 
