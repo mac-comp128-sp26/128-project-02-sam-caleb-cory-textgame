@@ -10,6 +10,7 @@ public class Game {
         sc = new Scanner(System.in);
 
         initPlayer();
+        // initStory();
 
         sc.close();
     }
