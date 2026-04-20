@@ -1,8 +1,6 @@
 package basementCrawl;
 
 import java.util.NoSuchElementException;
-import java.util.Scanner;
-
 
 /**
  *  The {@code Graph} class represents an undirected graph of vertices
