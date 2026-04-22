@@ -1,0 +1,14 @@
+3
+0#
+%This is event 0. It points to the two other events.
+=1#Event 1
+=2#Event 2
+&
+1#
+%This is event 1. It points back to event 0.
+=0#Event 0
+&
+2#
+%This is event 2. It points to event 1.
+=1#Event 1
+&

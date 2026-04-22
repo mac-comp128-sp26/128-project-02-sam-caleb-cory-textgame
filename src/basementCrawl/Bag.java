@@ -104,4 +104,15 @@ public class Bag<T> implements Iterable<T> {
         }
 
     }
+
+    @Override
+    public String toString() {
+        String returnString = "";
+        Node<T> node = first;
+        for (int i = 0; i < n; i++) {
+            returnString += node.T.toString() + " ";
+            node = node.next;
+        }
+        return returnString;
+    }
 }

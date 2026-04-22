@@ -15,6 +15,11 @@ public class Event {
         this.filePath = filePath;
     }
 
+    public Event(String blurb, String[] options) {
+        this.description = blurb;
+        this.options = options;
+    }
+
     public int getID() {
         return eventID;
     }
@@ -29,5 +34,14 @@ public class Event {
 
     public String[] getOptions() {
         return options;
+    }
+
+    @Override
+    public String toString() {
+        String opString = "";
+        for (String op : options) {
+            opString += op + "\n";
+        }
+        return description + "\n" + opString;
     }
 }

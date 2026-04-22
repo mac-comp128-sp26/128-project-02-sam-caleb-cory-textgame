@@ -34,13 +34,15 @@ import java.util.NoSuchElementException;
  *
  *  EK: Modified to use Scanner
  *  SA: Modified to be called AdjacencyListGraph and to use a unified Graph interface
+ *  Caleb, Sam, Cory: Modified to be directed and contain an array of its own vertices
  */
-public class AdjacencyListGraph {
+public class AdjacencyListGraph<T> {
     private static final String NEWLINE = System.getProperty("line.separator");
 
     private final int V;
     private int E;
     private Bag<Integer>[] adj;
+    private T[] vertices;
 
     /**
      * Initializes an empty graph with {@code V} vertices and 0 edges.
@@ -99,7 +101,6 @@ public class AdjacencyListGraph {
             E++;
 
             adj[v].add(w);
-            adj[w].add(v);
         }
     }
 
@@ -134,6 +135,14 @@ public class AdjacencyListGraph {
         return 0;
     }
 
+    public T[] getVertices() {
+        return vertices;
+    }
+
+    public void setVertices(T[] vertices) {
+        if (vertices.length != V) {throw new IllegalArgumentException("Array not of size " + V);}
+        this.vertices = vertices;
+    }
 
     /**
      * Returns a string representation of this graph.
