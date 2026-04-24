@@ -16,14 +16,8 @@ import java.util.Scanner;
 
 public class EventBuilder {
 
-    Event[] vertices = new Event[5];
-
-    public static AdjacencyListGraph buildEvent(){
-        return new AdjacencyListGraph(5);
-    }
-
     public static AdjacencyListGraph<Event> getMainEventsGraph() throws FileNotFoundException, URISyntaxException{
-        URI uri = EventBuilder.class.getResource("/test.txt").toURI();
+        URI uri = EventBuilder.class.getResource("/script.txt").toURI();
         String path = Paths.get(uri).toAbsolutePath().toString();
         return readFile(path);
     }
@@ -52,7 +46,7 @@ public class EventBuilder {
 
                 if (indicator=='%') {
                     //Strip the % and add it to the blurb
-                    blurb = b;
+                    blurb = addNewLines(b);
                 } else if (indicator=='=') {
                     //Strip the =ID# and add it to the options
                     optionIDs.add(getIDFromLine(b));
@@ -87,6 +81,15 @@ public class EventBuilder {
             accum += lineArray[i];
         }
         return(Integer.parseInt(accum));
+    }
+
+    public static String addNewLines(String a) {
+        String[] lines = a.split("/");
+        String accum = "";
+        for (String line : lines) {
+            accum += line + "\n";
+        }
+        return accum;
     }
 
     /**

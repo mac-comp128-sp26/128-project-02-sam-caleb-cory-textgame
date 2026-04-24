@@ -1,24 +1,119 @@
 25
 0#
-%“Hello? Helloooo? Wake up, sleepyhead. You’re not supposed to be in here.”\nAt the sound of this voice, your eyes flutter open. Immediately, bright fluorescent lights attack your retinas, and your pupils violently contract. The sensation is unpleasant. You rub your aching eyes and lazily glance upwards to the woman standing above you. Her arms are crossed. She looks angry.\n“This is a restricted area,” she says. “Only newspaper staff are allowed in the Mac Weekly office. How did you get in here, anyway?”\n“Wait – how did I get in here?”, you think to yourself. But you can’t remember.\n“Not that it matters,” the girl continues. “Just grab your things and go.”
+%"Hello? Helloooo? Wake up, sleepyhead. You're not supposed to be in here."/At the sound of this voice, your eyes flutter open. Immediately, bright fluorescent lights attack your retinas, and your pupils violently contract. The sensation is unpleasant. You rub your aching eyes and lazily glance upwards to the woman standing above you. Her arms are crossed. She looks angry./"This is a restricted area," she says. "Only newspaper staff are allowed in the Mac Weekly office. How did you get in here, anyway?"/"Wait – how did I get in here?", you think to yourself. But you can't remember./"Not that it matters," the girl continues. "Just grab your things and go."
 =1#Look for your things.
 =2#Stay reclined
 &
 1#
-%Wait, where are your things? You check your pockets — they’re empty. You look around the room, but you don’t see your backpack. You get up and begin shuffling around the room, glancing under desks and lifting couch pillows. There’s no sign of your things anywhere. No keys. No ID. How are you supposed to get into your Dupre single now?\n“You can’t find your keys? Or your ID? Hmm… Well, someone at JWall might be able to help you with your key. And isn’t there a place in the Campus Center that handles IDs? That’s where I’d start if I were you. Not that any of this is my problem. Now scram, before I have to call Public Safety.”
+%Wait, where are your things? You check your pockets — they're empty. You look around the room, but you don't see your backpack. You get up and begin shuffling around the room, glancing under desks and lifting couch pillows. There's no sign of your things anywhere. No keys. No ID. How are you supposed to get into your Dupre single now?/"You can't find your keys? Or your ID? Hmm… Well, someone at JWall might be able to help you with your key. And isn't there a place in the Campus Center that handles IDs? That's where I'd start if I were you. Not that any of this is my problem. Now scram, before I have to call Public Safety."
 =3#Go to Shaw Field.
 &
 2#
-%You refuse to get out of bed, the rebellious soul that you are, and quickly fall back asleep. Fed up with your defiance, the woman calls Public Safety. You reawaken to find yourself being dragged out of The Mac Weekly office by two PubSafe officers. You’re left outside with no leads and nobody to give you a hand. [Game Over].
+%You refuse to get out of bed, the rebellious soul that you are, and quickly fall back asleep. Fed up with your defiance, the woman calls Public Safety. You reawaken to find yourself being dragged out of The Mac Weekly office by two PubSafe officers. You're left outside with no leads and nobody to give you a hand. [Game Over].
 &
 3#
 %Two roads diverged in a yellow wood. And by roads, I mean sidewalks. And by yellow wood, I mean Shaw Field. You take a deep breath of fresh air. The grass smells much better than the basement you just crawled out of.
 =4#Go to JWall
 =5#Go to the CC
-=6# Wait around
+=6#Wait around
 &
 4#
-%You amble inside JWall, remembering the advice that rude Mac Weekly girl told you. In the lobby, you see a gaggle of Media & Cultural Studies students. They appear to be making some kind of incomprehensible, bohemian arthouse film. Perhaps they have some idea where your keys went.\nYou remember that the Facilities office is located under JWall, just below your feet. They might also be able to help you with your key. That’s their domain, right?\nOr you could just go it alone. Who needs help, when you have your sigma motivation gym playlist?
+%You amble inside JWall, remembering the advice that rude Mac Weekly girl told you. In the lobby, you see a gaggle of Media & Cultural Studies students. They appear to be making some kind of incomprehensible, bohemian arthouse film. Perhaps they have some idea where your keys went./You remember that the Facilities office is located under JWall, just below your feet. They might also be able to help you with your key. That's their domain, right?/Or you could just go it alone. Who needs help, when you have your sigma motivation gym playlist?
+=3#Go back to Shaw Field
 =7#Talk to the film students
 =9#Go it alone
-=10#Go to Facilities
+=11#Go to Facilities
+&
+5#
+%You stand in the basement of the CC. It seems you have a couple of options. You could visit Document Services. They deal with keys, right? Or you could simply try to draw attention to your plight. What will you do?
+=3#Return to Shaw Field
+=17#Take the stage
+=20#Go to Doc Services
+&
+6#
+%You stand around Shaw Field, loitering until something catches your attention. It's Tori, the Public Safety dog! Tori approaches you, wagging her tail.
+=22#Pet
+=23#Ignore
+&
+7#
+%You walk up to the student working the camera and tap them on the shoulder. They whip around, beaming. "Just in time! We're about to shoot your scene!"/"My scene?", you reply, confused./"Of course. You're our actor, right? It said on craigslist that you specialize in key-related scenes!"/Key-related scenes? Maybe these wackos actually do know where your keys are…
+=4#Walk away
+=8#Play along
+&
+8#
+%"Alright," the film student begins. "In this scene, you're gonna be cracking a safe. The safe is a metaphor for capitalism. Or climate change. We're not totally sure yet. And inside the safe isn't money, but a key — the key to the very safe you just cracked. It's a metacommentary, y'know? The safe is already unlocked. We just need you to pretend to crack it."/"Already unlocked?", you think. "This will be easy. I barely even need to act. Just need to check if the key in here is my key."/Sure enough, when the film student yells "Action!", you're able to rip the safe right open. You reach inside the safe and pull out the key — your key! You grab it and go, leaving the set before the film student can call "Cut!"
+=4#Return to the lobby
+&
+9#
+%"Who needs help? You're an alpha male. Surely you can find your key on your own."/This thought plays in your head repeatedly as you methodically search every corner of JWall. But it's been six hours, and you've found nothing. Maybe it's time to pursue a different course of action.
+=4#Realize your mistake
+=10#Persist
+&
+10#
+%Day turns into night and day again. You refuse to ask for help, choosing instead to rummage through trash cans and crawl under tables. When this fails, you decide to just live in JWall. That way you never have to find your key. You never need to ask for help. You never have to admit defeat, because you are an alpha, and alphas never lose. [Game over]
+&
+11#
+%The sun is nice, but it's time to go back into another basement. JWall's basement, to be specific./The Facilities office is quiet… too quiet. It's dark, too, save for a small ray of sunlight penetrating through one of the room's few windows. In the dim light, you can make out the vague outline of a figure leaning against the back wall./"Hello, anyone there?", you shout in the general direction of the figure. "I can't find my key."/At the sound of the word "key," the figure jolts to life. "Key?," he asks. "You lost your key?"/"Yeah. I can't find it," you reply./"Well, normally I'd be able to help you, but there's a rule about lost keys." the figure says. We even have a rhyme about it: ‘I can make you a new key, but I'm afraid I can't do it for free. You'll have to pay our little fee, by answering my riddles three.'"
+=12#Answer the riddles
+=4#Leave
+&
+12#
+%Riddle #1: I have hands but no fingers. I have a face but no eyes. What am I?
+=13#A clock
+=15#A very injured man
+=15#A very injured woman
+&
+13#
+%Riddle #2: I always run but never walk. I have a bed but never sleep. I have a mouth but never talk. What am I?
+=15#The Flash
+=14#A river
+=15#A shy and busy Mac student
+&
+14#
+%Riddle #3: What gets wet the more it dries?
+=16#A towel
+=15#Red Lobster cheddar biscuit
+=15#A rainy desert
+&
+15#
+%"WRONG! Haha! Stupid! You're so dumb!" the figure yells in ecstacy...///////"you can try again though if you want i guess."
+=12#Try again
+=4#Leave
+&
+16#
+%"Wow, you actually did it! You answered all of my questions!", the figure exclaims. "Well, better hold up my end of the bargain." He reaches into his coat pocket and produces a small metal plate, roughly the size of a credit card, but slightly thicker. He then holds the plate up to his mouth and begins to chew on it, much like a beaver chews on a log. After a solid two minutes of agonizing, teeth-crushing jaw movement, he pulls the metal plate out of his mouth — except it's no longer a plate, it's a key, perfectly contoured to fit your front door./"How did you do that?", you ask, incredulous. "And how did you know what my key looks like?"/Before the figure can answer, the single ray of sun illuminating the room is hidden by a cloud, and the room goes dark. When the sunlight returns, he is gone.
+=4#Leave
+&
+17#
+%Maybe if you make enough noise, someone will help you with your ID. And what better place is there to cause a scene than the stage at the Loch?
+=18#Play air guitar
+=19#Do acapella
+&
+18#
+%You grab a cue stick from an empty pool table and hop onstage. You hold the cue stick like a guitar and pretend to shred out the guitar solo from "Hotel California," while you mouth the corresponding notes. Everyone loves it. A crowd of onlookers quickly forms. They cheer you on and throw flowers at you. You play air guitar for another three hours, traversing the discographies of Queen, The Beatles and Pink Floyd with your cue stick-guitar. Eventually, Public Safety forces you to stop, much to the chagrin of your new fans. As the crowd disperses, you spot something on the floor. Did someone leave their ID here? Wait a second, it looks familiar. That's your ID!
+=3#Be escorted back to Shaw Field
+19#
+%Upon reaching the stage, you immediately launch into an acapella cover of Madonna's "Like A Prayer." It's quickly met by boos from the hungry students waiting in line at the Loch. Several students take videos of you, which they later post on social media with mean captions. Someone even throws a tomato at you. Embarrassed, you flee the CC. You don't think you can ever show your face on campus again. [Game over]
+&
+20#
+%If anyone can help you get a new ID, it's Document Services! Unfortunately for you, the student worker at the front desk doesn't look very well. You ask him what's wrong. "So…hungry…", he groans in reply, "Too hungry… to work…"
+=21#Help the famished student
+=5#Leave him to starve
+&
+21#
+%Lucky for you, the Loch is right next door. You spend a meal swipe and begin to chef up. You put your blood, sweat, and tears into this bowl. It's a masterpiece. Your masterpiece. If this doesn't revive the student worker, then nothing else can./You return to the student worker, bowl in hand. "Feed… me…", he groans./"Seriously?", you reply./"Too… tired… to hold… utensil", he murmurs./You begin to spoon-feed the lethargic student. The moment he swallows his first bite of the bowl, his ears instantly perk up./"Thank you for saving me." he says, the life returned to his voice. "I saw my life flash before my eyes. There was a lot of RStudio involved. It was depressing."/"Can you give me a new ID?", you ask, struggling to hide your frustration./"Sure, boss. Check behind your ear."/You feel around behind your ear and find a brand new ID with your name and face on it./"Don't ask how I did that," the student worker says. "A magician never reveals his secrets. Now go, and let me eat in peace."
+=3#Amble in awe back to Shaw Field
+&
+22#
+%You lean down and pet Tori. She taps your leg with her paw, indicating she wants you to follow her. You oblige, and she leads you around campus. Her nose to the ground, she's clearly tracking a scent, but what could she be looking for? Then you see it — your backpack! You grab your backpack, and thank Tori for being such a good girl with some head pats. Satisfied, she runs off to help the next student that needs her.
+=3#Consider your next move
+&
+23#
+%You ignore Tori. She taps you on the leg with her paw a few times. You keep ignoring her. She barks at you, and you turn away from her, hoping she'll just leave you alone. Fed up, Tori stands on her two hind legs and produces a set of handcuffs from her little dog jacket, which she fastens to your wrists while you're not looking./As you struggle to release yourself from the cuffs, a Public Safety officer walks up to you. "Sorry kid," he says. "You're under arrest."/"Why?!", you ask desperately./"Can't ignore the dog. Them's the rules."/[Game over]
+&
+24#
+%After a long day of searching, you finally make it back to Dupre with your key, your ID, and even your backpack. Upon reaching your room, you immediately drop your things, crawl into your twin bed, and fall into a deep and restful slumber. Everything is right in the world.//GOOD END
+&
+25#
+%You head back to Dupre, key and ID in hand. You still don't know where your backpack is. The next day, you keep looking for your backpack, but can't find it. The hunt for your backpack begins to consume your every waking moment. You can't sleep. You can't focus in class. All you can think about is that backpack. Every night, you start at the ceiling, listless. You imagine the backpack, sitting alone in a field, anticipating your return. "I'll find you, my loyal backpack", you whisper in the darkness of your Dupre single. "Wait for me."//BAD ENDING
+&
