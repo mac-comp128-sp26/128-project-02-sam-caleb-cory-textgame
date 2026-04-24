@@ -1,0 +1,24 @@
+25
+0#
+%“Hello? Helloooo? Wake up, sleepyhead. You’re not supposed to be in here.”\nAt the sound of this voice, your eyes flutter open. Immediately, bright fluorescent lights attack your retinas, and your pupils violently contract. The sensation is unpleasant. You rub your aching eyes and lazily glance upwards to the woman standing above you. Her arms are crossed. She looks angry.\n“This is a restricted area,” she says. “Only newspaper staff are allowed in the Mac Weekly office. How did you get in here, anyway?”\n“Wait – how did I get in here?”, you think to yourself. But you can’t remember.\n“Not that it matters,” the girl continues. “Just grab your things and go.”
+=1#Look for your things.
+=2#Stay reclined
+&
+1#
+%Wait, where are your things? You check your pockets — they’re empty. You look around the room, but you don’t see your backpack. You get up and begin shuffling around the room, glancing under desks and lifting couch pillows. There’s no sign of your things anywhere. No keys. No ID. How are you supposed to get into your Dupre single now?\n“You can’t find your keys? Or your ID? Hmm… Well, someone at JWall might be able to help you with your key. And isn’t there a place in the Campus Center that handles IDs? That’s where I’d start if I were you. Not that any of this is my problem. Now scram, before I have to call Public Safety.”
+=3#Go to Shaw Field.
+&
+2#
+%You refuse to get out of bed, the rebellious soul that you are, and quickly fall back asleep. Fed up with your defiance, the woman calls Public Safety. You reawaken to find yourself being dragged out of The Mac Weekly office by two PubSafe officers. You’re left outside with no leads and nobody to give you a hand. [Game Over].
+&
+3#
+%Two roads diverged in a yellow wood. And by roads, I mean sidewalks. And by yellow wood, I mean Shaw Field. You take a deep breath of fresh air. The grass smells much better than the basement you just crawled out of.
+=4#Go to JWall
+=5#Go to the CC
+=6# Wait around
+&
+4#
+%You amble inside JWall, remembering the advice that rude Mac Weekly girl told you. In the lobby, you see a gaggle of Media & Cultural Studies students. They appear to be making some kind of incomprehensible, bohemian arthouse film. Perhaps they have some idea where your keys went.\nYou remember that the Facilities office is located under JWall, just below your feet. They might also be able to help you with your key. That’s their domain, right?\nOr you could just go it alone. Who needs help, when you have your sigma motivation gym playlist?
+=7#Talk to the film students
+=9#Go it alone
+=10#Go to Facilities
