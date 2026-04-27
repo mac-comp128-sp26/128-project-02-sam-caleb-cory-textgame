@@ -86,7 +86,7 @@ public class AdjacencyListGraph<T> {
     }
 
     /**
-     * Adds the undirected edge v-w to this graph.
+     * Adds a directed edge v-w to this graph.
      *
      * @param v one vertex in the edge
      * @param w the other vertex in the edge
@@ -95,9 +95,8 @@ public class AdjacencyListGraph<T> {
     public void addEdge(int v, int w) {
         // If so, increment the total number of edges
         // Add w to v's adjacency list
-        // Add v to w's adjacency list
 
-        if(adj[v] != null && adj[w] != null) {
+        if(adj[v] != null) {
             E++;
 
             adj[v].add(w);
