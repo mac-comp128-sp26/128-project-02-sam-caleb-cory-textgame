@@ -15,6 +15,7 @@ import java.util.Scanner;
  */
 
 public class EventBuilder {
+    private static Event[] vertices;
 
     public static AdjacencyListGraph<Event> getMainEventsGraph() throws FileNotFoundException, URISyntaxException{
         URI uri = EventBuilder.class.getResource("/script.txt").toURI();
@@ -22,15 +23,13 @@ public class EventBuilder {
         return readFile(path);
     }
 
-    
-
     public static AdjacencyListGraph<Event> readFile(String filename) throws FileNotFoundException{
         // Get the res file
         Scanner in = new Scanner(new File(filename));
 
         //First line is the number of events
         int V = Integer.parseInt(in.nextLine());
-        Event[] vertices = new Event[V];
+        vertices = new Event[V];
         AdjacencyListGraph<Event> adj = new AdjacencyListGraph<Event>(V);
 
         int count = 0;
@@ -110,5 +109,9 @@ public class EventBuilder {
         for (int i = 0; i < mainGraph.V(); i++) {
             System.out.println(i + " is adjascent to " + mainGraph.adj(i).toString());
         }
+    }
+
+    public static Event[] getEvents() {
+        return vertices;
     }
 }
