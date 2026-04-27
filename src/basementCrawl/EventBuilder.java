@@ -23,7 +23,14 @@ public class EventBuilder {
     }
 
     
-
+/**
+ * Given a file containing the information of the story,
+ * this method parses it and turns it into usable Event objects
+ * and an adjacency list graph to connect them.
+ * @param filename pointed to a properly formatted file. Any file without correct indicators is liable to break.
+ * @return A graph of the events of the story
+ * @throws FileNotFoundException
+ */
     public static AdjacencyListGraph<Event> readFile(String filename) throws FileNotFoundException{
         // Get the res file
         Scanner in = new Scanner(new File(filename));
@@ -73,6 +80,12 @@ public class EventBuilder {
         return adj;
     }
 
+    /**
+     * Helper method for readFile. Takes a line and--assuming it starts with the number--
+     * builds what that number is until it is stopped by a '#'
+     * @param a
+     * @return
+     */
     public static int getIDFromLine(String a) {
         char[] lineArray = a.toCharArray();
         String accum = "";
@@ -85,6 +98,11 @@ public class EventBuilder {
         return(Integer.parseInt(accum));
     }
 
+    /**
+     * This allows pieces of text to contain multiple paragraphs by turning '/' into a newline.
+     * @param a
+     * @return The same string but with newlines.
+     */
     public static String addNewLines(String a) {
         String[] lines = a.split("/");
         String accum = "";

@@ -112,7 +112,7 @@
 %You ignore Tori. She taps you on the leg with her paw a few times. You keep ignoring her. She barks at you, and you turn away from her, hoping she'll just leave you alone. Fed up, Tori stands on her two hind legs and produces a set of handcuffs from her little dog jacket, which she fastens to your wrists while you're not looking./As you struggle to release yourself from the cuffs, a Public Safety officer walks up to you. "Sorry kid," he says. "You're under arrest."/"Why?!", you ask desperately./"Can't ignore the dog. Them's the rules."/[Game over]
 &
 24#
-%After a long day of searching, you finally make it back to Dupre with your key, your ID, and even your backpack. Upon reaching your room, you immediately drop your things, crawl into your twin bed, and fall into a deep and restful slumber. Everything is right in the world.//GOOD END
+%After a long day of searching, you finally make it back to Dupre with your key, your ID, and even your backpack. Upon reaching your room, you immediately drop your things, crawl into your twin bed, and fall into a deep and restful slumber. Everything is right in the world.//GOOD ENDING
 &
 25#
 %You head back to Dupre, key and ID in hand. You still don't know where your backpack is. The next day, you keep looking for your backpack, but can't find it. The hunt for your backpack begins to consume your every waking moment. You can't sleep. You can't focus in class. All you can think about is that backpack. Every night, you start at the ceiling, listless. You imagine the backpack, sitting alone in a field, anticipating your return. "I'll find you, my loyal backpack", you whisper in the darkness of your Dupre single. "Wait for me."//BAD ENDING
