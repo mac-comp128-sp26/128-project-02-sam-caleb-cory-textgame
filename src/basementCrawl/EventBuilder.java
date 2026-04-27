@@ -22,6 +22,8 @@ public class EventBuilder {
         return readFile(path);
     }
 
+    
+
     public static AdjacencyListGraph<Event> readFile(String filename) throws FileNotFoundException{
         // Get the res file
         Scanner in = new Scanner(new File(filename));
@@ -61,7 +63,7 @@ public class EventBuilder {
                 options[i] = optionTexts.get(i);
                 adj.addEdge(eventID, optionIDs.get(i));
             }
-            vertices[count] = new Event(blurb, options);
+            vertices[count] = new Event(blurb, options, count);
             count++;
         }
 

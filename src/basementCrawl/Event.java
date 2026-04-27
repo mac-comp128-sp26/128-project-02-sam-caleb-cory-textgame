@@ -1,31 +1,18 @@
 package basementCrawl;
 
 public class Event {
-    String title;
     String description;
     String[] options;
     int eventID;
-    String filePath;
 
-    public Event(String title, String description, String[] options, int eventID, String filePath) {
-        this.description = description;
-        this.options = options;
-        this.options = options;
-        this.eventID = eventID;
-        this.filePath = filePath;
-    }
-
-    public Event(String blurb, String[] options) {
+    public Event(String blurb, String[] options, int id) {
         this.description = blurb;
         this.options = options;
+        this.eventID = id;
     }
 
     public int getID() {
         return eventID;
-    }
-
-    public String getTitle() {
-        return title;
     }
 
     public String getDescription() {

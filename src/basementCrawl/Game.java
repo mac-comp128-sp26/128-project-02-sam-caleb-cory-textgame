@@ -10,7 +10,7 @@ public class Game {
         sc = new Scanner(System.in);
 
         initPlayer();
-        // initStory();
+        initStory();
 
         sc.close();
     }
@@ -26,7 +26,14 @@ public class Game {
         player = new Player(name);
     }
 
+    private void initStory() {
+
+    }
+
     private int getValidInput() {
+        System.out.println("What do you choose? (Number): ");
+
+        int input = sc.nextInt();
         return 0;
     }
     
