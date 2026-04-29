@@ -51,10 +51,12 @@ public class Game {
             Event currentEvent = events[currentID];
 
             System.out.println();
-            System.out.println("==============================================================================");
+            System.out.println("=================================================================================================================================");
             System.out.println(currentEvent.getDescription());
+            System.out.println("=================================================================================================================================");
 
-            ArrayList<Integer> nextEvents = getNextEvents(eventID);
+
+            ArrayList<Integer> nextEvents = getNextEvents(currentID);
 
             if(nextEvents.size() == 0) {
                 System.out.println("END");
@@ -66,6 +68,9 @@ public class Game {
             for(int i = 0; i < options.length; i++) {
                 System.out.println((i + 1) + ". " + options[i]);
             }
+
+            System.out.println("=================================================================================================================================");
+
 
             int choice = getValidInput(options.length);
             currentID = nextEvents.get(choice - 1);
@@ -84,10 +89,11 @@ public class Game {
         return nextEvents;
     }
 
-    private int getValidInput(int maxOptions) {
+    private Integer getValidInput(int maxOptions) {
         while(true) {
             if(maxOptions == 0) {
                 System.out.println("========== GAME OVER ==========");
+                return null;
             } else {
                 System.out.println("What do you choose? (Number): ");
 
