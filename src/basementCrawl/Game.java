@@ -53,7 +53,7 @@ public class Game {
             if (currentEvent.getItem() != null){
                 player.getInventory().addItem(currentEvent.getItem());
             }
-            
+
             if (currentEvent.getID() == 3){ // SHAW FIELD
                 boolean hasKey = false;
                 boolean hasId = false;
@@ -61,23 +61,27 @@ public class Game {
 
                 Item[] items = player.getInventory().getItems();
                 for (int i = 0; i < items.length; i++){
-                    if(items[i].toString() == "key"){
-                        System.out.println("Player has key");
-                        hasKey = true;
-                    }
-                    if(items[i].toString() == "id"){
-                        System.out.println("Player has id");
-                        hasId = true;
-                    }
-                    if(items[i].toString() == "backpack"){
-                        System.out.println("Player has backpack");
-                        hasBackpack = true;
+                    if(items[i] != null){
+                        if(items[i].toString() == "key"){
+                            System.out.println("Player has key");
+                            hasKey = true;
+                        }
+                        if(items[i].toString() == "id"){
+                            System.out.println("Player has id");
+                            hasId = true;
+                        }
+                        if(items[i].toString() == "backpack"){
+                            System.out.println("Player has backpack");
+                            hasBackpack = true;
+                        }
                     }
                 if(hasKey && hasBackpack && hasId){
-                    // GO TO TRUE END
+                    currentID = 24;
+                    currentEvent = events[24];
                 }
                 else if(hasKey && hasId){
-                    // GO TO BAD END
+                    currentID = 25;
+                    currentEvent = events[25];
                 }
                 }
             }
