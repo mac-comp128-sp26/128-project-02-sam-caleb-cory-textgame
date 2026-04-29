@@ -4,11 +4,13 @@ public class Event {
     String description;
     String[] options;
     int eventID;
+    Item item;
 
-    public Event(String blurb, String[] options, int id) {
+    public Event(String blurb, String[] options, int id, Item item) {
         this.description = blurb;
         this.options = options;
         this.eventID = id;
+        this.item = item;
     }
 
     public int getID() {
@@ -21,6 +23,10 @@ public class Event {
 
     public String[] getOptions() {
         return options;
+    }
+
+    public Item getItem() {
+        return item;
     }
 
     @Override

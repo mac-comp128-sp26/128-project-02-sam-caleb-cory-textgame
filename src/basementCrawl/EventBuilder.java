@@ -62,7 +62,18 @@ public class EventBuilder {
                 options[i] = optionTexts.get(i);
                 adj.addEdge(eventID, optionIDs.get(i));
             }
-            vertices[count] = new Event(blurb, options, count);
+            if (count == 16 || count == 8){
+                vertices[count] = new Event(blurb, options, count, new Item("key"));
+            }
+            else if (count == 21 || count == 18){
+                vertices[count] = new Event(blurb, options, count, new Item("id"));
+            }
+            else if (count == 22){
+                vertices[count] = new Event(blurb, options, count, new Item("backpack"));
+            }
+            else{
+                vertices[count] = new Event(blurb, options, count, null);
+            }
             count++;
         }
 
