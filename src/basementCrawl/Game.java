@@ -55,7 +55,14 @@ public class Game {
             }
 
             if (currentEvent.getID() == 3){ // SHAW FIELD
-                
+                if(player.getInventory().getItems().containsKey("keys")){
+                    if(player.getInventory().getItems().containsKey("id")){
+                        if(player.getInventory().getItems().containsKey("backpack")){
+                            currentEvent = events[25];
+                        }
+                        else currentEvent = events[24];
+                    }
+                }
             }
 
             System.out.println(player.getInventory().toString());
