@@ -51,39 +51,11 @@ public class Game {
         while(true) {
             Event currentEvent = events[currentID];
             if (currentEvent.getItem() != null){
-                player.getInventory().addItem(currentEvent.getItem());
+                player.getInventory().addItem(currentEvent.getItem().toString());
             }
 
             if (currentEvent.getID() == 3){ // SHAW FIELD
-                boolean hasKey = false;
-                boolean hasId = false;
-                boolean hasBackpack = false;
-
-                Item[] items = player.getInventory().getItems();
-                for (int i = 0; i < items.length; i++){
-                    if(items[i] != null){
-                        if(items[i].toString() == "key"){
-                            System.out.println("Player has key");
-                            hasKey = true;
-                        }
-                        if(items[i].toString() == "id"){
-                            System.out.println("Player has id");
-                            hasId = true;
-                        }
-                        if(items[i].toString() == "backpack"){
-                            System.out.println("Player has backpack");
-                            hasBackpack = true;
-                        }
-                    }
-                if(hasKey && hasBackpack && hasId){
-                    currentID = 24;
-                    currentEvent = events[24];
-                }
-                else if(hasKey && hasId){
-                    currentID = 25;
-                    currentEvent = events[25];
-                }
-                }
+                
             }
 
             System.out.println(player.getInventory().toString());

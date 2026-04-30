@@ -1,65 +1,58 @@
 package basementCrawl;
 
+import java.util.HashMap;
+
 public class Inventory {
-    private Item[] items;
-    private int nextIdx;
+    private HashMap<String, Item> items;
+    private int max;
 
     public Inventory(int size) {
-        this.items = new Item[size];
-        nextIdx = 0;
+        this.items = new HashMap<String, Item>(size);
+        max = size;
     }
 
-    public Item[] getItems(){
+    public HashMap<String, Item> getItems(){
         return items;
     }
 
     /**
-     * Adds item to inventory at next open index.
+     * Add item to inventory.
      * 
      * @return false if inventory full
      */
-    public boolean addItem(Item item) {
-        if (nextIdx >= items.length){
+    public boolean addItem(String itemName) {
+        if (items.size() >= max){
             return false;
         }
         else{
-            items[nextIdx] = item;
-            nextIdx++;
+            items.put(itemName, new Item(itemName));
             return true;
         }
     }
 
     /**
-     * Removes the most recently added item from inventory.
+     * Remove specified item from inventory.
      * 
      * @return false if inventory empty
      */
-    public boolean removeLastItem() {
-        if (nextIdx > 0){
-            items[nextIdx - 1] = null;
-            nextIdx--;
+    public boolean removeItem(String itemName) {
+        if (items.size() > 0){
+            items.remove(itemName);
             return true;
         }
         else return false;
     }
 
-    /**
-     * Resets the inventory by filling it with null instances.
-     * 
-     */
     public void clearInventory(){
-        for(int i = 0; i < items.length; i++){
-            items[i] = null;
-        }
-        nextIdx = 0;
+        items.clear();
     }
 
     @Override
     public String toString() {
         StringBuilder s = new StringBuilder();
         s.append("[");
-        for(int i = 0; i < nextIdx; i++){
-            s.append(items[i].toString() + ", ");
+        for(String item : items.keySet()){
+            s.append(item.toString() + ", ");
         }
         s.append("]");
         return s.toString();

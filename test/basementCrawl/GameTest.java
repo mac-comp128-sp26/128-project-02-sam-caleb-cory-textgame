@@ -13,33 +13,34 @@ public class GameTest {
     @Test
     public void testInventoryAdd(){
         inventory = new Inventory(3);
-        inventory.addItem(new Item("wallet"));
+        inventory.addItem("wallet");
         assertEquals(inventory.toString(), "[wallet, ]"); 
 
         // Check to ensure we can't add to a full inventory
-        inventory.addItem(new Item("keys"));
-        inventory.addItem(new Item("phone"));
-        assertFalse(inventory.addItem(new Item("book")));
+        inventory.addItem("keys");
+        inventory.addItem("phone");
+        assertFalse(inventory.addItem("book"));
     }
     
     @Test
     public void testInventoryRemoveLastItem(){
         inventory = new Inventory(3);
-        inventory.addItem(new Item("wallet"));
-        inventory.addItem(new Item("keys"));
-        assertEquals(inventory.toString(), "[wallet, keys, ]");
-        inventory.removeLastItem(); // Remove "keys"
-        assertEquals(inventory.toString(), "[wallet, ]");
+        inventory.addItem("wallet");
+        inventory.addItem("keys");
+        assertTrue(inventory.getItems().containsKey("keys"));
+        inventory.removeItem("keys"); // Remove "keys"
+        System.out.println(inventory.getItems().toString());
+        assertFalse(inventory.getItems().containsKey("keys"));
 
         // Check to ensure we can't remove from an empty inventory
-        inventory.removeLastItem(); // Remove "wallet"
-        assertFalse(inventory.removeLastItem());
+        inventory.removeItem("wallet"); // Remove "wallet"
+        assertFalse(inventory.removeItem("wallet"));
     }
 
     @Test
     public void testInventoryClear(){
         inventory = new Inventory(3);
-        inventory.addItem(new Item("wallet"));
+        inventory.addItem("wallet");
         assertEquals(inventory.toString(), "[wallet, ]");
         inventory.clearInventory();
         assertEquals(inventory.toString(), "[]");
