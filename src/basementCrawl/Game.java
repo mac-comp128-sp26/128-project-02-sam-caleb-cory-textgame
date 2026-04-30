@@ -59,8 +59,10 @@ public class Game {
                     if(player.getInventory().getItems().containsKey("id")){
                         if(player.getInventory().getItems().containsKey("backpack")){
                             currentEvent = events[25];
+                            currentID = 25;
                         }
                         else currentEvent = events[24];
+                        currentID = 24;
                     }
                 }
             }
