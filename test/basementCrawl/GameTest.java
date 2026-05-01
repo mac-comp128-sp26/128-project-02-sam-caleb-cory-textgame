@@ -14,10 +14,10 @@ public class GameTest {
     public void testInventoryAdd(){
         inventory = new Inventory(3);
         inventory.addItem("wallet");
-        assertEquals(inventory.toString(), "[wallet, ]"); 
+        assertEquals(inventory.toString(), "[wallet]"); 
 
         // Check to ensure we can't add to a full inventory
-        inventory.addItem("keys");
+        inventory.addItem("keys"); 
         inventory.addItem("phone");
         assertFalse(inventory.addItem("book"));
     }

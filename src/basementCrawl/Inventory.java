@@ -52,7 +52,10 @@ public class Inventory {
         StringBuilder s = new StringBuilder();
         s.append("[");
         for(String item : items.keySet()){
-            s.append(item.toString() + ", ");
+            if(items.size() == 1){
+                s.append(item.toString());
+            }
+            else s.append(item.toString() + ", ");
         }
         s.append("]");
         return s.toString();
