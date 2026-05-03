@@ -67,7 +67,7 @@ public class Game {
                 }
             }
 
-            System.out.println(player.getInventory().toString());
+            System.out.println("Inventory: " + player.getInventory().toString());
 
             System.out.println();
             System.out.println("=================================================================================================================================");

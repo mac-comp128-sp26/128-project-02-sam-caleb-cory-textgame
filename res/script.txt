@@ -5,7 +5,7 @@
 =2#Stay reclined
 &
 1#
-%Wait, where are your things? You check your pockets — they're empty. You look around the room, but you don't see your backpack. You get up and begin shuffling around the room, glancing under desks and lifting couch pillows. There's no sign of your things anywhere. No keys. No ID. How are you supposed to get into your Dupre single now?/"You can't find your keys? Or your ID? Hmm... Well, someone at JWall might be able to help you with your key. And isn't there a place in the Campus Center that handles IDs? That's where I'd start if I were you. Not that any of this is my problem. Now scram, before I have to call Public Safety."
+%Wait, where are your things? You check your pockets. They're empty. You look around the room, but you don't see your backpack. You get up and begin shuffling around the room, glancing under desks and lifting couch pillows. There's no sign of your things anywhere. No keys. No ID. How are you supposed to get into your Dupre single now?/"You can't find your keys? Or your ID? Hmm... Well, someone at JWall might be able to help you with your key. And isn't there a place in the Campus Center that handles IDs? That's where I'd start if I were you. Not that any of this is my problem. Now scram, before I have to call Public Safety."
 =3#Go to Shaw Field.
 &
 2#
