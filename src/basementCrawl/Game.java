@@ -68,7 +68,6 @@ public class Game {
                 }
             }
 
-            System.out.println("Inventory: " + player.getInventory().toString());
 
             System.out.println();
             System.out.println("=================================================================================================================================");
@@ -82,9 +81,9 @@ public class Game {
                 System.out.println("END");
                 break;
             }
-
+            System.out.println("Inventory: " + player.getInventory().toString());
             String[] options = currentEvent.getOptions();
-
+        
             for(int i = 0; i < options.length; i++) {
                 System.out.println((i + 1) + ". " + options[i]);
             }
