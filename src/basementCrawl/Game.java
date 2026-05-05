@@ -7,6 +7,11 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 
+/**
+ * Main class for the Basement Crawler game.
+ * 
+ * @author Caleb Hatlevig, Sam Kennedy, Cory Li
+ */
 public class Game {
     Player player;
     Scanner sc;
@@ -26,6 +31,9 @@ public class Game {
         new Game();
     }
 
+    /**
+     * Initializes the player setup. At this time is it choosing your name.
+     */
     private void initPlayer() {
         System.out.println("What's your name?: ");
 
@@ -33,6 +41,9 @@ public class Game {
         player = new Player(name);
     }
 
+    /**
+     * Initiaalizes the story setup. Builds all events from the adjacency list graph and runs the first one.
+     */
     private void initStory() {
         try {
             graph = EventBuilder.getMainEventsGraph();
@@ -45,6 +56,11 @@ public class Game {
         }
     }
 
+    /**
+     * Runs an event based on it's event ID.
+     * 
+     * @param eventID
+     */
     private void runEvent(int eventID) {
         int currentID = eventID;
 
@@ -97,6 +113,12 @@ public class Game {
         }
     }
 
+    /**
+     * Gets the next events that could occur after the current event.
+     * 
+     * @param eventID
+     * @return Events linked to the current event.
+     */
     private ArrayList<Integer> getNextEvents(int eventID) {
         ArrayList<Integer> nextEvents = new ArrayList<>();
 
@@ -109,6 +131,12 @@ public class Game {
         return nextEvents;
     }
 
+    /**
+     * Validates input, allowing the player to only choose the given options.
+     * 
+     * @param maxOptions
+     * @return
+     */
     private Integer getValidInput(int maxOptions) {
         while(true) {
             if(maxOptions == 0) {
