@@ -2,6 +2,10 @@ package basementCrawl;
 
 import java.util.HashMap;
 
+
+/**
+ * Represent's the player's inventory
+ */
 public class Inventory {
     private HashMap<String, Item> items;
     private int max;
@@ -11,6 +15,11 @@ public class Inventory {
         max = size;
     }
 
+    /**
+     * Returns all items in a player's inventory.
+     * 
+     * @return
+     */
     public HashMap<String, Item> getItems(){
         return items;
     }
@@ -43,10 +52,16 @@ public class Inventory {
         else return false;
     }
 
+    /**
+     * Removes all items from the player's inventory.
+     */
     public void clearInventory(){
         items.clear();
     }
 
+    /**
+     * Returns all items in the player's inventory in the form of a string.
+     */
     @Override
     public String toString() {
         StringBuilder s = new StringBuilder();

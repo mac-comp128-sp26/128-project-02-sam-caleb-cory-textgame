@@ -1,5 +1,8 @@
 package basementCrawl;
 
+/**
+ * Represents the player
+ */
 public class Player {
     private Inventory inventory;
     private String name;
